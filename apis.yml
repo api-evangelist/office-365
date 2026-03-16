@@ -1,172 +1,116 @@
+aid: office-365
 name: Office 365 APIs
-description: Microsoft Office 365 is a cloud-based suite of productivity and collaboration applications that integrates all Microsoft's existing online applications into a single platform.
-image: https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png
-created: 2024-01-15 00:00:00+00:00
-modified: 2024-01-15 00:00:00+00:00
-url: https://www.microsoft.com/en-us/microsoft-365
-specificationVersion: '0.16'
+description: >-
+  Microsoft Office 365 is a cloud-based suite of productivity and collaboration
+  applications that integrates all Microsoft's existing online applications into
+  a single platform including email, calendar, files, Teams, and SharePoint.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-- productivity
-- collaboration
-- cloud
-- enterprise
-- email
-- documents
+  - Productivity
+  - Collaboration
+  - Cloud
+  - Enterprise
+  - Email
+  - Documents
+url: https://raw.githubusercontent.com/api-evangelist/office-365/refs/heads/main/apis.yml
+created: '2024-01-15'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis:
-- name: Microsoft Graph API
-  description: The primary API for Office 365, providing access to data and intelligence in Microsoft 365, Windows 10, and Enterprise Mobility + Security
-  image: https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png
-  humanUrl: https://developer.microsoft.com/en-us/graph
-  baseUrl: https://graph.microsoft.com/v1.0
-  tags:
-  - graph
-  - users
-  - mail
-  - calendar
-  - teams
-  - sharepoint
-  - onedrive
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/overview
-  - type: OpenAPI
-    url: https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml
-  - type: Authentication
-    url: https://learn.microsoft.com/en-us/graph/auth/
-  - type: SDKs
-    url: https://learn.microsoft.com/en-us/graph/sdks/sdks-overview
-  - type: Playground
-    url: https://developer.microsoft.com/en-us/graph/graph-explorer
-  - type: Changelog
-    url: https://developer.microsoft.com/en-us/graph/changelog
-  - type: Pricing
-    url: https://developer.microsoft.com/en-us/graph/pricing
-- name: Outlook Mail API
-  description: Access email, manage folders, send mail, and manage mail settings via Microsoft Graph
-  humanUrl: https://learn.microsoft.com/en-us/graph/outlook-mail-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/me/messages
-  tags:
-  - email
-  - mail
-  - outlook
-  - messaging
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/mail-api-overview
-  - type: Quickstart
-    url: https://learn.microsoft.com/en-us/graph/tutorials
-- name: Outlook Calendar API
-  description: Access and manage calendar events, meeting requests, and calendar groups
-  humanUrl: https://learn.microsoft.com/en-us/graph/outlook-calendar-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/me/calendar
-  tags:
-  - calendar
-  - events
-  - meetings
-  - scheduling
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/calendar
-  - type: Tutorials
-    url: https://learn.microsoft.com/en-us/graph/tutorials
-- name: OneDrive API
-  description: Access and manage files stored in OneDrive and SharePoint
-  humanUrl: https://learn.microsoft.com/en-us/onedrive/developer/
-  baseUrl: https://graph.microsoft.com/v1.0/me/drive
-  tags:
-  - files
-  - storage
-  - onedrive
-  - documents
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/onedrive
-  - type: File Picker
-    url: https://learn.microsoft.com/en-us/onedrive/developer/controls/file-pickers/
-- name: Microsoft Teams API
-  description: Integrate with Microsoft Teams for chat, channels, meetings, and collaboration
-  humanUrl: https://learn.microsoft.com/en-us/graph/teams-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/teams
-  tags:
-  - teams
-  - chat
-  - collaboration
-  - meetings
-  - channels
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview
-  - type: Apps Documentation
-    url: https://learn.microsoft.com/en-us/microsoftteams/platform/
-  - type: Bot Framework
-    url: https://dev.botframework.com/
-- name: SharePoint API
-  description: Access SharePoint sites, lists, and document libraries
-  humanUrl: https://learn.microsoft.com/en-us/graph/sharepoint-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/sites
-  tags:
-  - sharepoint
-  - sites
-  - lists
-  - collaboration
-  - content management
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/sharepoint
-  - type: REST API
-    url: https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service
-- name: Excel API
-  description: Read and write Excel workbooks stored in OneDrive and SharePoint
-  humanUrl: https://learn.microsoft.com/en-us/graph/excel-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook
-  tags:
-  - excel
-  - spreadsheets
-  - workbooks
-  - data
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/excel
-- name: Planner API
-  description: Create and manage plans, tasks, and buckets in Microsoft Planner
-  humanUrl: https://learn.microsoft.com/en-us/graph/planner-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/planner
-  tags:
-  - planner
-  - tasks
-  - project management
-  - planning
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/planner-overview
-- name: To Do API
-  description: Access and manage Microsoft To Do tasks and task lists
-  humanUrl: https://learn.microsoft.com/en-us/graph/todo-concept-overview
-  baseUrl: https://graph.microsoft.com/v1.0/me/todo
-  tags:
-  - tasks
-  - todo
-  - task management
-  properties:
-  - type: Documentation
-    url: https://learn.microsoft.com/en-us/graph/api/resources/todo-overview
+  - aid: office-365:microsoft-graph-api
+    name: Microsoft Graph API
+    description: >-
+      The primary API for Office 365, providing access to data and intelligence
+      in Microsoft 365, Windows 10, and Enterprise Mobility + Security.
+    humanURL: https://developer.microsoft.com/en-us/graph
+    baseURL: https://graph.microsoft.com/v1.0
+    tags:
+      - Graph
+      - Users
+      - Mail
+      - Calendar
+      - Teams
+      - SharePoint
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/graph/overview
+      - type: OpenAPI
+        url: https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml
+      - type: Authentication
+        url: https://learn.microsoft.com/en-us/graph/auth/
+      - type: SDKs
+        url: https://learn.microsoft.com/en-us/graph/sdks/sdks-overview
+      - type: Change Log
+        url: https://developer.microsoft.com/en-us/graph/changelog
+  - aid: office-365:outlook-mail-api
+    name: Outlook Mail API
+    description: >-
+      Access email, manage folders, send mail, and manage mail settings via
+      Microsoft Graph.
+    humanURL: https://learn.microsoft.com/en-us/graph/outlook-mail-concept-overview
+    baseURL: https://graph.microsoft.com/v1.0/me/messages
+    tags:
+      - Email
+      - Mail
+      - Outlook
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/graph/api/resources/mail-api-overview
+  - aid: office-365:outlook-calendar-api
+    name: Outlook Calendar API
+    description: Access and manage calendar events, meeting requests, and calendar groups.
+    humanURL: https://learn.microsoft.com/en-us/graph/outlook-calendar-concept-overview
+    baseURL: https://graph.microsoft.com/v1.0/me/calendar
+    tags:
+      - Calendar
+      - Events
+      - Meetings
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/graph/api/resources/calendar
+  - aid: office-365:onedrive-api
+    name: OneDrive API
+    description: Access and manage files stored in OneDrive and SharePoint.
+    humanURL: https://learn.microsoft.com/en-us/onedrive/developer/
+    baseURL: https://graph.microsoft.com/v1.0/me/drive
+    tags:
+      - Files
+      - Storage
+      - OneDrive
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/graph/api/resources/onedrive
+  - aid: office-365:microsoft-teams-api
+    name: Microsoft Teams API
+    description: >-
+      Integrate with Microsoft Teams for chat, channels, meetings, and collaboration.
+    humanURL: https://learn.microsoft.com/en-us/graph/teams-concept-overview
+    baseURL: https://graph.microsoft.com/v1.0/teams
+    tags:
+      - Teams
+      - Chat
+      - Collaboration
+    properties:
+      - type: Documentation
+        url: https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview
 common:
-- type: Developer Portal
-  url: https://developer.microsoft.com/en-us/microsoft-365
-- type: Authentication Guide
-  url: https://learn.microsoft.com/en-us/azure/active-directory/develop/
-- type: Status Page
-  url: https://status.office365.com/
-- type: Support
-  url: https://learn.microsoft.com/en-us/answers/products/
-- type: Blog
-  url: https://devblogs.microsoft.com/microsoft365dev/
-- type: Terms of Service
-  url: https://www.microsoft.com/en-us/servicesagreement
-- type: Privacy Policy
-  url: https://privacy.microsoft.com/
+  - type: Website
+    url: https://www.microsoft.com/en-us/microsoft-365
+  - type: Documentation
+    url: https://developer.microsoft.com/en-us/microsoft-365
+  - type: Authentication
+    url: https://learn.microsoft.com/en-us/azure/active-directory/develop/
+  - type: Status
+    url: https://status.office365.com/
+  - type: Support
+    url: https://learn.microsoft.com/en-us/answers/products/
+  - type: Blog
+    url: https://devblogs.microsoft.com/microsoft365dev/
+  - type: Terms of Service
+    url: https://www.microsoft.com/en-us/servicesagreement
+  - type: Privacy Policy
+    url: https://privacy.microsoft.com/
 maintainers:
-- name: Microsoft Corporation
-  twitter: Microsoft365Dev
-  email: microsoft-graph@microsoft.com
-  url: https://developer.microsoft.com/en-us/microsoft-365
+  - FN: Kin Lane
+    email: kin@apievangelist.com
