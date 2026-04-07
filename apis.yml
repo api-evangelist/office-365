@@ -7,12 +7,12 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Productivity
-  - Collaboration
   - Cloud
-  - Enterprise
-  - Email
+  - Collaboration
   - Documents
+  - Email
+  - Enterprise
+  - Productivity
 url: https://raw.githubusercontent.com/api-evangelist/office-365/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-03-16'
@@ -26,12 +26,12 @@ apis:
     humanURL: https://developer.microsoft.com/en-us/graph
     baseURL: https://graph.microsoft.com/v1.0
     tags:
-      - Graph
-      - Users
-      - Mail
       - Calendar
-      - Teams
+      - Graph
+      - Mail
       - SharePoint
+      - Teams
+      - Users
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/graph/overview
@@ -76,8 +76,8 @@ apis:
     baseURL: https://graph.microsoft.com/v1.0/me/drive
     tags:
       - Files
-      - Storage
       - OneDrive
+      - Storage
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/graph/api/resources/onedrive
@@ -88,9 +88,9 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/graph/teams-concept-overview
     baseURL: https://graph.microsoft.com/v1.0/teams
     tags:
-      - Teams
       - Chat
       - Collaboration
+      - Teams
     properties:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview
