@@ -1,28 +1,45 @@
-# Office 365 APIs (office-365)
-Microsoft Office 365 is a cloud-based suite of productivity and collaboration applications that integrates all Microsoft's existing online applications into a single platform.
+# Office 365 (office-365)
 
-**URL:** [Visit APIs.json URL](https://www.microsoft.com/en-us/microsoft-365)
+Microsoft Office 365 is a cloud-based suite of productivity and collaboration applications that integrates all Microsoft's existing online applications into a single platform including email, calendar, files, Teams, and SharePoint.
 
-## Tags:
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/office-365/refs/heads/main/apis.yml)
 
- - productivity, collaboration, cloud, enterprise, email, documents
+## Scope
+
+- **Type:** Index
+
+## Tags
+
+- Cloud
+- Collaboration
+- Documents
+- Email
+- Enterprise
+- Productivity
 
 ## Timestamps
 
-- **Created:** 2024-01-15 00:00:00+00:00 
-- **Modified:** 2024-01-15 00:00:00+00:00 
+- **Created:** 2024-01-15
+- **Modified:** 2026-04-28
 
 ## APIs
 
 ### Microsoft Graph API
-The primary API for Office 365, providing access to data and intelligence in Microsoft 365, Windows 10, and Enterprise Mobility + Security
+
+The primary API for Office 365, providing access to data and intelligence in Microsoft 365, Windows 10, and Enterprise Mobility + Security.
 
 **Human URL:** [https://developer.microsoft.com/en-us/graph](https://developer.microsoft.com/en-us/graph)
 
+**Base URL:** `https://graph.microsoft.com/v1.0`
 
-#### Tags:
+#### Tags
 
- - graph, users, mail, calendar, teams, sharepoint, onedrive
+- Calendar
+- Graph
+- Mail
+- SharePoint
+- Teams
+- Users
 
 #### Properties
 
@@ -30,133 +47,86 @@ The primary API for Office 365, providing access to data and intelligence in Mic
 - [OpenAPI](https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml)
 - [Authentication](https://learn.microsoft.com/en-us/graph/auth/)
 - [SDKs](https://learn.microsoft.com/en-us/graph/sdks/sdks-overview)
-- [Playground](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Changelog](https://developer.microsoft.com/en-us/graph/changelog)
-- [Pricing](https://developer.microsoft.com/en-us/graph/pricing)
+- [Change Log](https://developer.microsoft.com/en-us/graph/changelog)
 
 ### Outlook Mail API
-Access email, manage folders, send mail, and manage mail settings via Microsoft Graph
+
+Access email, manage folders, send mail, and manage mail settings via Microsoft Graph.
 
 **Human URL:** [https://learn.microsoft.com/en-us/graph/outlook-mail-concept-overview](https://learn.microsoft.com/en-us/graph/outlook-mail-concept-overview)
 
+**Base URL:** `https://graph.microsoft.com/v1.0/me/messages`
 
-#### Tags:
+#### Tags
 
- - email, mail, outlook, messaging
+- Email
+- Mail
+- Outlook
 
 #### Properties
 
 - [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/mail-api-overview)
-- [Quickstart](https://learn.microsoft.com/en-us/graph/tutorials)
 
 ### Outlook Calendar API
-Access and manage calendar events, meeting requests, and calendar groups
+
+Access and manage calendar events, meeting requests, and calendar groups.
 
 **Human URL:** [https://learn.microsoft.com/en-us/graph/outlook-calendar-concept-overview](https://learn.microsoft.com/en-us/graph/outlook-calendar-concept-overview)
 
+**Base URL:** `https://graph.microsoft.com/v1.0/me/calendar`
 
-#### Tags:
+#### Tags
 
- - calendar, events, meetings, scheduling
+- Calendar
+- Events
+- Meetings
 
 #### Properties
 
 - [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/calendar)
-- [Tutorials](https://learn.microsoft.com/en-us/graph/tutorials)
 
 ### OneDrive API
-Access and manage files stored in OneDrive and SharePoint
+
+Access and manage files stored in OneDrive and SharePoint.
 
 **Human URL:** [https://learn.microsoft.com/en-us/onedrive/developer/](https://learn.microsoft.com/en-us/onedrive/developer/)
 
+**Base URL:** `https://graph.microsoft.com/v1.0/me/drive`
 
-#### Tags:
+#### Tags
 
- - files, storage, onedrive, documents
+- Files
+- OneDrive
+- Storage
 
 #### Properties
 
 - [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/onedrive)
-- [File Picker](https://learn.microsoft.com/en-us/onedrive/developer/controls/file-pickers/)
 
 ### Microsoft Teams API
-Integrate with Microsoft Teams for chat, channels, meetings, and collaboration
+
+Integrate with Microsoft Teams for chat, channels, meetings, and collaboration.
 
 **Human URL:** [https://learn.microsoft.com/en-us/graph/teams-concept-overview](https://learn.microsoft.com/en-us/graph/teams-concept-overview)
 
+**Base URL:** `https://graph.microsoft.com/v1.0/teams`
 
-#### Tags:
+#### Tags
 
- - teams, chat, collaboration, meetings, channels
+- Chat
+- Collaboration
+- Teams
 
 #### Properties
 
 - [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview)
-- [Apps Documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/)
-- [Bot Framework](https://dev.botframework.com/)
-
-### SharePoint API
-Access SharePoint sites, lists, and document libraries
-
-**Human URL:** [https://learn.microsoft.com/en-us/graph/sharepoint-concept-overview](https://learn.microsoft.com/en-us/graph/sharepoint-concept-overview)
-
-
-#### Tags:
-
- - sharepoint, sites, lists, collaboration, content management
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/sharepoint)
-- [REST API](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service)
-
-### Excel API
-Read and write Excel workbooks stored in OneDrive and SharePoint
-
-**Human URL:** [https://learn.microsoft.com/en-us/graph/excel-concept-overview](https://learn.microsoft.com/en-us/graph/excel-concept-overview)
-
-
-#### Tags:
-
- - excel, spreadsheets, workbooks, data
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/excel)
-
-### Planner API
-Create and manage plans, tasks, and buckets in Microsoft Planner
-
-**Human URL:** [https://learn.microsoft.com/en-us/graph/planner-concept-overview](https://learn.microsoft.com/en-us/graph/planner-concept-overview)
-
-
-#### Tags:
-
- - planner, tasks, project management, planning
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/planner-overview)
-
-### To Do API
-Access and manage Microsoft To Do tasks and task lists
-
-**Human URL:** [https://learn.microsoft.com/en-us/graph/todo-concept-overview](https://learn.microsoft.com/en-us/graph/todo-concept-overview)
-
-
-#### Tags:
-
- - tasks, todo, task management
-
-#### Properties
-
-- [Documentation](https://learn.microsoft.com/en-us/graph/api/resources/todo-overview)
 
 ## Common Properties
 
-- [Developer Portal](https://developer.microsoft.com/en-us/microsoft-365)
-- [Authentication Guide](https://learn.microsoft.com/en-us/azure/active-directory/develop/)
-- [Status Page](https://status.office365.com/)
+- [Website](https://www.microsoft.com/en-us/microsoft-365)
+- [Documentation](https://developer.microsoft.com/en-us/microsoft-365)
+- [Authentication](https://learn.microsoft.com/en-us/azure/active-directory/develop/)
+- [Status](https://status.office365.com/)
 - [Support](https://learn.microsoft.com/en-us/answers/products/)
 - [Blog](https://devblogs.microsoft.com/microsoft365dev/)
 - [Terms of Service](https://www.microsoft.com/en-us/servicesagreement)
@@ -164,6 +134,6 @@ Access and manage Microsoft To Do tasks and task lists
 
 ## Maintainers
 
-**FN:** Microsoft Corporation
+**FN:** Kin Lane
 
-**Email:** microsoft-graph@microsoft.com
+**Email:** kin@apievangelist.com
