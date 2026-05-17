@@ -41,7 +41,7 @@ apis:
         url: https://learn.microsoft.com/en-us/graph/auth/
       - type: SDKs
         url: https://learn.microsoft.com/en-us/graph/sdks/sdks-overview
-      - type: Change Log
+      - type: ChangeLog
         url: https://developer.microsoft.com/en-us/graph/changelog
   - aid: office-365:outlook-mail-api
     name: Outlook Mail API
@@ -101,15 +101,15 @@ common:
     url: https://developer.microsoft.com/en-us/microsoft-365
   - type: Authentication
     url: https://learn.microsoft.com/en-us/azure/active-directory/develop/
-  - type: Status
+  - type: StatusPage
     url: https://status.office365.com/
   - type: Support
     url: https://learn.microsoft.com/en-us/answers/products/
   - type: Blog
     url: https://devblogs.microsoft.com/microsoft365dev/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.microsoft.com/en-us/servicesagreement
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://privacy.microsoft.com/
   - type: Integrations
     url: https://www.microsoft.com/en-us/marketplace
