@@ -95,6 +95,10 @@ apis:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview
 common:
+  - type: GitHubOrganization
+    url: https://github.com/OfficeDev
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/microsoft-365
   - type: Website
     url: https://www.microsoft.com/en-us/microsoft-365
   - type: Documentation
