@@ -95,6 +95,12 @@ apis:
       - type: Documentation
         url: https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview
 common:
+  - type: TrustCenter
+    url: security/office-365-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/office-365-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/office-365-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/OfficeDev
   - type: LinkedIn
