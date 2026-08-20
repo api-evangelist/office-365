@@ -42,6 +42,13 @@ apis:
       - Graph
       - Mail
       - SharePoint
+      - Team
+      - User
+    tags_raw:
+      - Calendar
+      - Graph
+      - Mail
+      - SharePoint
       - Teams
       - Users
     properties:
@@ -76,6 +83,10 @@ apis:
     baseURL: https://graph.microsoft.com/v1.0/me/calendar
     tags:
       - Calendar
+      - Event
+      - Meetings
+    tags_raw:
+      - Calendar
       - Events
       - Meetings
     properties:
@@ -87,6 +98,10 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/onedrive/developer/
     baseURL: https://graph.microsoft.com/v1.0/me/drive
     tags:
+      - File
+      - OneDrive
+      - Storage
+    tags_raw:
       - Files
       - OneDrive
       - Storage
@@ -100,6 +115,10 @@ apis:
     humanURL: https://learn.microsoft.com/en-us/graph/teams-concept-overview
     baseURL: https://graph.microsoft.com/v1.0/teams
     tags:
+      - Chat
+      - Collaboration
+      - Team
+    tags_raw:
       - Chat
       - Collaboration
       - Teams
